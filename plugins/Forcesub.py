@@ -5,7 +5,6 @@ from pyrogram.errors import UserNotParticipant
 OWNER_ID = os.environ.get('OWNER_ID')
 UPDATE_CHANNEL = os.environ.get('UPDATE_CHANNEL', '')
 DB_CHANNEL_ID = os.environ.get("DB_CHANNEL_ID")
-PORT = os.environ.get("PORT", "8080")
 
 
 @Client.on_message(filters.private & filters.incoming)
